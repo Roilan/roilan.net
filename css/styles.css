@@ -58,11 +58,11 @@ hr {
 /* Footer */
 
 #footer-start ul li{
-	margin-bottom: 15px;
+	margin-bottom: 1px;
 	font-size: 18px !important;
 }
 
-.footer-nav, #footer-start span {
+.footer-nav, #footer-start span, #footer-start img {
     margin: 0 auto;
     display: table;
     table-layout: fixed;
@@ -70,13 +70,9 @@ hr {
     font-size: 14px;
 }
 
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid black;
-	padding-top: 15px;
+#footer-start img {
+	margin-top: 15px;
+	padding-bottom: 15px;
 }
 
 #footer-about {
