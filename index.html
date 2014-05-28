@@ -25,15 +25,15 @@
     <div class="container">
 
       <div id="header">
-        <h2 class="navbar-left" id="nav-name">Roilan<small>Web Developer &amp; Entrepreneur</small></h2>
+        <h2 class="navbar-left" id="navbar-left-name">Roilan<small>Web Developer &amp; System Administrator</small></h2>
 
-        <ul class="nav nav-pills navbar-right" id="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#" id="clickContact">Contact</a></li>
+        <ul id="navbar-right-social" class="list-inline navbar-right">
+          <li><a class="icon-skype" href="skype:roilan.14" target="_blank">Skype</a></li>
+          <li><a class="icon-twitter" href="http://twitter.com/roilan14" target="_blank">Twitter</a></li>
+          <li><a class="icon-linkedin" href="https://www.linkedin.com/pub/roilan-salinas/96/42/468" target="_blank">LinkedIn</a></li>
+          <li><a class="icon-instagram" href="http://instagram.com/rorsx" target="_blank">Instagram</a></li>
         </ul>
-        
+
         <div class="clearfix"></div>
       </div>
 
@@ -42,11 +42,11 @@
       <div id="main">
        <div class="row">
           <div class="col-sm-4 col-md-4">
-            <h2>Developement</h2>
+            <h2>Development</h2>
             <p>Everyone has visions for their web presence. How easy can you develop those visions? Allow me to
                help you develop that vision into a completely clean and responsive website across major devices.</p>
 
-            <p>A strong web presence can help you attract those users you've been missing out!</p>
+            <p>A strong web presence can help you attract those users you've been missing!</p>
           </div>
 
 
@@ -54,12 +54,12 @@
             <h2>Hosting</h2>
             <p>You have your website developed but don't have a host? Maybe you aren't familiar with hosting services.</p>
 
-            <p>I can take care of that, offering you a piece of mind. I have been providing hosting services since May 2012 with my company, <a href="https://tragicservers.com/" target="_blank">TragicServers</a>, serving 
+            <p>I can take care of that, offering you a peace of mind. I have been providing hosting services since May 2012 with my company, <a href="https://tragicservers.com/" target="_blank">TragicServers</a>, serving 
             hundreds of customers with low priced, high quality service. </p>
           </div>
 
           <div class="col-sm-4 col-md-4">
-            <h2>Dev + Host</h2>
+            <h2>System Administrator</h2>
             <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
 
             <p>Cominbing both development and hosting to offer a complete managed service. </p>
@@ -70,8 +70,32 @@
       <hr />
       
       <div id="footer">
+        <div id="footer-start" class="row">
+          <div class="col-sm-12 col-md-12">
+
+            <ul class="nav nav-pills footer-nav">
+              <li><a href="#" id="clickPortfolio">Portfolio</a></li>
+              <li><a href="#" id="clickAbout">About</a></li>
+              <li><a href="#" id="clickContact">Contact</a></li>
+            </ul>
+            
+            <span class="arrow-down footer-nav"></span>
+          </div>
+        </div>
+
+
+        <div id="footer-about" class="row">
+          <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <h3>About me<small>I'm a Web Developer, System Administrator and Entrepreneur located in Binghamton, NY</small></h3>
+
+            <p>I enjoy taking visions and turning them into clean, simple and minimalist websites. I enjoy code
+              structure and strive to write efficient code, whether it's HTML, CSS, Javascript or jQuery. I also 
+              enjoy learning, to better myself, my <a href="https://tragicservers.com/" target="_blank">Business</a> or becoming a better developer.</p>
+          </div>
+        </div>
+
         <div id="footer-contact" class="row">
-          <h3>Interested in starting a project or have a question?<small>Contact me below</small></h3>
+          <h3>Interested in starting a project or have questions?<small>Contact me below</small></h3>
 
           <div class="col-sm-8 col-sm-offset-2 contact-form">
             <form id="contact" method="post" class="form" role="form">
@@ -98,18 +122,6 @@
 
         </div>
 
-        <div id="footer-end" class="row">
-          <div class="col-sm-12 col-md-12">
-
-            <ul class="list-inline">
-              <li><a class="icon-twitter" href="http://twitter.com/roilan14" target="_blank">Twitter</a></li>
-              <li><a class="icon-linkedin" href="https://www.linkedin.com/pub/roilan-salinas/96/42/468" target="_blank">LinkedIn</a></li>
-              <li><a class="icon-instagram" href="http://instagram.com/rorsx" target="_blank">Instagram</a></li>
-            </ul>
-
-          </div>
-        </div>
-
     </div>
 
     </div>
@@ -120,13 +132,27 @@
 
     <script>
       $(document).ready(function() {
-        //Hide footer content upon page load
-        $('#footer-contact').hide();
+        var $footerAbout = $('#footer-about'),
+            $footerContact = $('#footer-contact'),
+            $clickAbout = $('#clickAbout'),
+            $clickContact = $('#clickContact'),
+            $preventDefault = event.preventDefault();
 
-        $('#clickContact').click(function() { 
-          event.preventDefault();
-          $('#footer-contact').slideToggle(500);
+        $footerAbout.hide();
+        $footerContact.hide();
+
+        $clickAbout.click(function() {
+          $preventDefault;
+          $footerAbout.slideToggle(500);
         });
+
+          $clickContact.click(function() { 
+            $preventDefault;
+            $footerAbout.slideUp();
+            $footerContact.slideToggle(500);
+          });
+
+
       });
     </script>
   </body>

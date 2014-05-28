@@ -8,40 +8,20 @@ body {
 	box-shadow: 2px 5px 20px #888;
 }
 
-
 /* Header */
 
 small {
 	padding-left: 15px;
-	font-size: 12pt !important;
+	font-size: 11.5pt !important;
 }
 
-#nav-name {
+#navbar-left-name {
 	margin-top: 30px;
 }
 
-#nav {
-	margin-top: 25px;
-}
-
-hr {
-	margin-top: 5px;
-	border-color: black;
-	opacity: 0.3;
-}
-
-/* Footer */
-
-#footer-contact {
-	text-align: center;
-}
-
-#footer-end {
-	text-align: center;
-}
-
-#hide {
-	display: none;
+#navbar-right-social {
+	margin-top: 28px;
+	word-spacing: 10px;
 }
 
 [class^="icon"] {
@@ -54,8 +34,11 @@ hr {
 	overflow: hidden;
 }
 
-.icon-twitter {
+.icon-skype {
 	background-position: 0 -64px;
+}
+.icon-twitter {
+	background-position: 0 -32px;
 }
 
 .icon-linkedin {
@@ -63,5 +46,47 @@ hr {
 }
 
 .icon-instagram {
-	background-position: 0 -32px;
+	background-position: 0 0px;
+}
+
+hr {
+	margin-top: 5px;
+	border-color: black;
+	opacity: 0.3;
+}
+
+/* Footer */
+
+#footer-start ul li{
+	margin-bottom: 15px;
+	font-size: 18px !important;
+}
+
+.footer-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+    font-size: 14px;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid black;
+	padding-top: 15px;
+}
+
+#footer-about {
+	margin-bottom: 20px;
+}
+
+#footer-about p {
+	padding-left: 20px;
+}
+
+#footer-contact {
+	text-align: center;
 }
