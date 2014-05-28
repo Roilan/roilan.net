@@ -90,3 +90,7 @@ hr {
 #footer-contact {
 	text-align: center;
 }
+
+#footer-contact textarea {
+	resize: none;
+}
