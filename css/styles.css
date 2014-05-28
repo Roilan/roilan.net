@@ -62,7 +62,7 @@ hr {
 	font-size: 18px !important;
 }
 
-.footer-nav {
+.footer-nav, #footer-start span {
     margin: 0 auto;
     display: table;
     table-layout: fixed;
