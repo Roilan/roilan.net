@@ -31,51 +31,103 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="clickContact">Contact</a></li>
         </ul>
         
         <div class="clearfix"></div>
       </div>
 
       <hr />
-     
-     <div class="row row-margins">
-        <div class="col-md-4">
-          <h2>Developement</h2>
-          <p>Everyone has visions for their web presence. How easy can you develop those visions? Allow me to
-             help you develop that vision into a completely clean and responsive website across major devices.</p>
-             
-          <p>A strong web presence can help you attract those users you've been missing out!</p>
+      
+      <div id="main">
+       <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <h2>Developement</h2>
+            <p>Everyone has visions for their web presence. How easy can you develop those visions? Allow me to
+               help you develop that vision into a completely clean and responsive website across major devices.</p>
+
+            <p>A strong web presence can help you attract those users you've been missing out!</p>
+          </div>
+
+
+          <div class="col-sm-4 col-md-4">
+            <h2>Hosting</h2>
+            <p>You have your website developed but don't have a host? Maybe you aren't familiar with hosting services.</p>
+
+            <p>I can take care of that, offering you a piece of mind. I have been providing hosting services since May 2012 with my company, <a href="https://tragicservers.com/" target="_blank">TragicServers</a>, serving 
+            hundreds of customers with low priced, high quality service. </p>
+          </div>
+
+          <div class="col-sm-4 col-md-4">
+            <h2>Dev + Host</h2>
+            <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
+
+            <p>Cominbing both development and hosting to offer a complete managed service. </p>
+          </div>
         </div>
-
-
-        <div class="col-md-4">
-          <h2>Hosting</h2>
-          <p>You have your website developed but don't have a host? Maybe you aren't familiar with hosting services.</p>
-
-          <p>I can take care of that, offering you a piece of mind. I have been providing hosting services since May 2012 with my company, <a href="https://tragicservers.com/" target="_blank">TragicServers</a>, serving 
-          hundreds of customers with low priced, high quality service. </p>
-        </div>
-
-        <div class="col-md-4">
-          <h2>Dev + Host</h2>
-          <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
-
-          <p>Cominbing both development and hosting to offer a complete managed service. </p>
-        </div>
-
       </div>
       
       <hr />
       
       <div id="footer">
-        <h1>Testing</h1>
+        <div id="footer-contact" class="row">
+          <h3>Interested in starting a project or have a question?<small>Contact me below</small></h3>
 
+          <div class="col-sm-8 col-sm-offset-2 contact-form">
+            <form id="contact" method="post" class="form" role="form">
+              <div class="row">
+                <div class="col-xs-6 col-md-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+                </div>
 
-      </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                </div>
+              </div> 
+
+              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+              <br />
+
+              <div class="row">
+                <div class="col-xs-12 col-md-12 form-group">
+                  <button class="btn btn-primary pull-right" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div id="footer-end" class="row">
+          <div class="col-sm-12 col-md-12">
+
+            <ul class="list-inline">
+              <li><a class="icon-twitter" href="http://twitter.com/roilan14" target="_blank">Twitter</a></li>
+              <li><a class="icon-linkedin" href="https://www.linkedin.com/pub/roilan-salinas/96/42/468" target="_blank">LinkedIn</a></li>
+              <li><a class="icon-instagram" href="http://instagram.com/rorsx" target="_blank">Instagram</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+    </div>
+
+    </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        //Hide footer content upon page load
+        $('#footer-contact').hide();
+
+        $('#clickContact').click(function() { 
+          event.preventDefault();
+          $('#footer-contact').slideToggle(500);
+        });
+      });
+    </script>
   </body>
 </html>
