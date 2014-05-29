@@ -1,14 +1,17 @@
 $(document).ready(function() {
   var $footerAbout = $('#footer-about'),
       $footerContact = $('#footer-contact'),
+      $footerSent = $('#footer-contact-sent'),
       $clickAbout = $('#clickAbout'),
       $clickContact = $('#clickContact'),
       $arrowImg = $('#footer-start img'),
-      $arrowTxt = $('#footer-start span');
+      $arrowTxt = $('#footer-start span'),
+      sentUrl = window.location.href;
 
+  $footerSent.hide();
   $footerAbout.hide();
   $footerContact.hide();
-  $('#footer-start span').hide();
+  $arrowTxt.hide();
 
   $arrowImg.hover(function() {
     $arrowTxt.show('fade', 800);
@@ -28,4 +31,8 @@ $(document).ready(function() {
     $footerContact.slideToggle(500);
   });
 
+  if (sentUrl.search("#sent") >= 0) {
+    $footerContact.slideUp(500);
+    $footerSent.slideDown(800).delay(1000).slideUp(800);
+  }
 });

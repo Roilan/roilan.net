@@ -80,7 +80,7 @@
             </ul>
             
             <span>Click above to expand</span>
-            <img src="img/arrow.png"></img>
+            <img src="img/arrow.png" alt=""/>
           </div>
         </div>
 
@@ -98,19 +98,19 @@
           <h3>Interested in starting a project or have questions?<small>Contact me below</small></h3>
 
           <div class="col-sm-8 col-sm-offset-2 contact-form">
-            <form id="contact" method="post" class="form" role="form">
+            <form id="contact" method="post" action="send.php"  class="form" role="form">
 
               <div class="row">
                 <div class="col-xs-6 col-md-6 form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+                  <input class="form-control" id="inputName" name="inputName" placeholder="Name" type="text" required autofocus />
                 </div>
 
                 <div class="col-xs-6 col-md-6 form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                  <input class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" type="email" required />
                 </div>
               </div> 
 
-              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="7"></textarea>
+              <textarea class="form-control" id="inputMessage" name="inputMessage" placeholder="Message" rows="7"></textarea>
               <br />
 
               <div class="row">
@@ -120,6 +120,14 @@
               </div>
 
             </form>
+          </div>
+        </div>
+        
+        <div id="footer-contact-sent" class="row">
+          <div class="col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
+            <h3>Thank you!<small>Message sent</small></h3>
+
+            <p>I will be in contact with you soon.</p>
           </div>
         </div>
 
