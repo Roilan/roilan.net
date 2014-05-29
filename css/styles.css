@@ -62,7 +62,9 @@ hr {
 	font-size: 18px !important;
 }
 
-.footer-nav, #footer-start span, #footer-start img {
+.footer-nav, 
+#footer-start span, 
+#footer-start img {
     margin: 0 auto;
     display: table;
     table-layout: fixed;
@@ -79,7 +81,8 @@ hr {
 	margin-bottom: 20px;
 }
 
-#footer-about p, #footer-contact-sent p {
+#footer-about p, 
+#footer-contact-sent p {
 	padding-left: 20px;
 	padding-bottom: 20px;
 }
