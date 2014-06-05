@@ -45,10 +45,6 @@ small {
 	background-position: 0 -96px;
 }
 
-.icon-instagram {
-	background-position: 0 0px;
-}
-
 hr {
 	margin-top: 5px;
 	border-color: black;
@@ -74,6 +70,12 @@ hr {
 
 #footer-start img {
 	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#footer-portfolio a > img {
+	margin-top: 20px;
+	margin-right: 40px;
 	padding-bottom: 15px;
 }
 
