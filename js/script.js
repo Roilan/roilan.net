@@ -37,7 +37,8 @@ $(document).ready(function() {
   }
 
   $('.lightbox').magnificPopup({ 
-    type: 'image'
+    type: 'image',
+    closeOnContentClick: true
   });
 
 });
