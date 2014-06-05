@@ -35,4 +35,9 @@ $(document).ready(function() {
     $footerContact.slideUp(500);
     $footerSent.slideDown(800).delay(1000).slideUp(800);
   }
+
+  $('.lightbox').magnificPopup({ 
+    type: 'image'
+  });
+
 });
