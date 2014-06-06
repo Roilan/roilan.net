@@ -34,6 +34,10 @@ small {
 	overflow: hidden;
 }
 
+[class^="icon"]:hover {
+	opacity: 0.5;
+}
+
 .icon-skype {
 	background-position: 0 -64px;
 }
