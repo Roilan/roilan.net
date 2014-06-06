@@ -25,8 +25,6 @@ $(document).ready(function() {
     });
 
   function myClick(obj) {
-    event.preventDefault();
-
     if (obj.css('display') == 'none'){
       $loadHide.slideUp(500);
       obj.slideToggle(500);
@@ -35,15 +33,18 @@ $(document).ready(function() {
     }
   }
 
-  $clickPortfolio.click(function() {
+  $clickPortfolio.click(function(event) {
+    event.preventDefault();
     myClick($footerPortfolio); }
   );
 
-  $clickAbout.click(function() {
+  $clickAbout.click(function(event) {
+    event.preventDefault();
     myClick($footerAbout); }
   );
 
-  $clickContact.click(function() {
+  $clickContact.click(function(event) {
+    event.preventDefault();
     myClick($footerContact); }
   );
 
