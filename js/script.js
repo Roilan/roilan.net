@@ -2,19 +2,21 @@ $(document).ready(function() {
   var $footerPortfolio = $('#footer-portfolio'),
       $footerAbout = $('#footer-about'),
       $footerContact = $('#footer-contact'),
-      $footerSent = $('#footer-contact-sent'),
-      $clickPortfolio = $('#clickPortfolio'),
-      $clickAbout = $('#clickAbout'),
-      $clickContact = $('#clickContact'),
-      $arrowImg = $('#footer-start img'),
-      $arrowTxt = $('#footer-start span'),
-      sentUrl = window.location.href;
+      $footerSent = $('#footer-contact-sent');
 
-  $footerPortfolio.hide();
-  $footerSent.hide();
-  $footerAbout.hide();
-  $footerContact.hide();
+  var $clickPortfolio = $('#clickPortfolio'),
+      $clickAbout = $('#clickAbout'),
+      $clickContact = $('#clickContact');
+
+  var $arrowImg = $('#footer-start img'),
+      $arrowTxt = $('#footer-start span');
+
+  var $loadHide = $('.loadHide');
+
+  var sentUrl = window.location.href;
+
   $arrowTxt.hide();
+  $loadHide.hide();
 
   $arrowImg.hover(function() {
     $arrowTxt.show('fade', 800);
@@ -22,26 +24,28 @@ $(document).ready(function() {
       $arrowTxt.hide('fade');
     });
 
-  $clickPortfolio.click(function() {
+  function myClick(obj) {
     event.preventDefault();
-    $footerAbout.slideUp(500);
-    $footerContact.slideUp(600);
-    $footerPortfolio.slideToggle(500);
-  });
+
+    if (obj.css('display') == 'none'){
+      $loadHide.slideUp(500);
+      obj.slideToggle(500);
+    } else if (obj.css('display') != 'none') {
+      obj.slideUp(500);
+    }
+  }
+
+  $clickPortfolio.click(function() {
+    myClick($footerPortfolio); }
+  );
 
   $clickAbout.click(function() {
-    event.preventDefault();
-    $footerPortfolio.slideUp(500);
-    $footerContact.slideUp(500);
-    $footerAbout.slideToggle(500);
-  });
+    myClick($footerAbout); }
+  );
 
   $clickContact.click(function() {
-    event.preventDefault();
-    $footerPortfolio.slideUp(500);
-    $footerAbout.slideUp(500);
-    $footerContact.slideToggle(500);
-  });
+    myClick($footerContact); }
+  );
 
   if (sentUrl.search("#sent") >= 0) {
     $footerContact.slideUp(500);

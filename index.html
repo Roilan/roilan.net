@@ -62,7 +62,7 @@
             <h2>System Administrator</h2>
             <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
 
-            <p>Cominbing both development and hosting to offer a complete managed service. </p>
+            <p>Cominbing both development and hosting to offer a complete managed service.</p>
           </div>
         </div>
       </div>
@@ -74,9 +74,9 @@
           <div class="col-sm-12 col-md-12">
 
             <ul class="nav nav-pills footer-nav">
-              <li><a href="#" id="clickPortfolio">Portfolio</a></li>
-              <li><a href="#" id="clickAbout">About</a></li>
-              <li><a href="#" id="clickContact">Contact</a></li>
+              <li><a href="#" id="clickPortfolio" data-myapp-target="footer-portfolio">Portfolio</a></li>
+              <li><a href="#" id="clickAbout" data-myapp-target="footer-about">About</a></li>
+              <li><a href="#" id="clickContact" data-myapp-target="footer-contact">Contact</a></li>
             </ul>
             
             <span>Click above to expand</span>
@@ -84,17 +84,21 @@
           </div>
         </div>
 
-        <div id="footer-portfolio" class="row">
+        <div id="footer-portfolio" class="row loadHide">
           <div class="col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
             
-            <a class="lightbox" href="img/ts.png" title="TragicServers"><img src="img/ts.png" width="150px" height="150px" /></a>
+            <a class="lightbox" href="img/ts.png" title="TragicServers">
+              <img src="img/ts.png" width="150px" height="150px">
+            </a>
 
-            <a class="lightbox" href="img/ts-mobile.png" title="TragicServers Mobile App (WIP)"><img src="img/ts-mobile.png" width="80px" height="150px" /></a>
+            <a class="lightbox" href="img/ts-mobile.png" title="TragicServers Mobile App (WIP)">
+              <img src="img/ts-mobile.png" width="80px" height="150px">
+            </a>
 
           </div>
         </div>
 
-        <div id="footer-about" class="row">
+        <div id="footer-about" class="row loadHide">
           <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
             <h3>About me<small>I'm a Web Developer, System Administrator and Entrepreneur located in Binghamton, NY</small></h3>
 
@@ -103,7 +107,7 @@
           </div>
         </div>
 
-        <div id="footer-contact" class="row">
+        <div id="footer-contact" class="row loadHide">
           <h3>Interested in starting a project or have questions?<small>Contact me below</small></h3>
 
           <div class="col-sm-8 col-sm-offset-2 contact-form">
@@ -132,7 +136,7 @@
           </div>
         </div>
         
-        <div id="footer-contact-sent" class="row">
+        <div id="footer-contact-sent" class="row loadHide">
           <div class="col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
             <h3>Thank you!<small>Message sent</small></h3>
 
