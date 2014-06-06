@@ -28,7 +28,7 @@ $(document).ready(function() {
     if (obj.css('display') == 'none'){
       $loadHide.slideUp(500);
       obj.slideToggle(500);
-    } else if (obj.css('display') != 'none') {
+    } else {
       obj.slideUp(500);
     }
   }
