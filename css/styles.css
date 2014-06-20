@@ -42,11 +42,15 @@ small {
 	background-position: 0 -64px;
 }
 .icon-twitter {
-	background-position: 0 -32px;
+	background-position: 0 0;
 }
 
 .icon-linkedin {
 	background-position: 0 -96px;
+}
+
+.icon-github {
+	background-position: 0 -32px;
 }
 
 hr {
