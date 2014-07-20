@@ -8,40 +8,42 @@ $(document).ready(function() {
       $clickAbout = $('#clickAbout'),
       $clickContact = $('#clickContact');
 
-  var $arrowImg = $('#footer-start img'),
-      $arrowTxt = $('#footer-start span');
-
   var $loadHide = $('.loadHide');
 
   var sentUrl = window.location.href;
 
-  $arrowTxt.hide();
   $loadHide.hide();
-
-  $arrowImg.hover(function() {
-    $arrowTxt.show('fade', 800);
-    },function() {
-      $arrowTxt.hide('fade');
-    });
 
   function myClick(obj) {
     if (obj.css('display') == 'none'){
       $loadHide.slideUp(500);
+
+      // Slides development section if not hidden
+      var d = $('.dev-menu');
+      if ($(d).css('display') != 'none') {
+        $(d).slideUp(600);
+      }
+
       obj.slideToggle(500);
     } else {
       obj.slideUp(500);
     }
   }
 
-  $clickPortfolio.click(function(event) {
-    event.preventDefault();
-    myClick($footerPortfolio); }
-  );
+  $('.clickDev').on('click', function(e) {
+    e.preventDefault();
+    myClick($('.dev-menu'));
+  });
 
-  $clickAbout.click(function(event) {
+   /* $clickAbout.click(function(event) {
     event.preventDefault();
     myClick($footerAbout); }
-  );
+  ); */
+
+  $('.clickHost').on('click', function(e) {
+    e.preventDefault();
+    myClick($('.host-menu'));
+  });
 
   $clickContact.click(function(event) {
     event.preventDefault();

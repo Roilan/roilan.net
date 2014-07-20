@@ -51,75 +51,72 @@
 
       <hr />
       
-      <div id="main">
+      <div class="main">
        <div class="row">
-          <div class="col-sm-4 col-md-4">
+        <nav>
+          <ul class="nav nav-tabs">
+              <li><a href="#" class="clickDev">Development</a></li>
+              <li><a href="#" class="clickHost">Hosting</a></li>
+              <li><a href="#" class="clickSys">System Administrator</a></li>
+          </ul>
+        </nav>
+        
+        <div class="main-content">
+          <div  class="col-sm-12 col-md-12 dev-menu">
             <h2>Development</h2>
             <p>Everyone has visions for their web presence. How easy can you develop those visions? Allow me to
                help you develop that vision into a completely clean and responsive website across major devices.</p>
 
             <p>A strong web presence can help you attract those users you've been missing!</p>
+            
+            <div class="dev-menu-port">
+              <h3>Latest work</h3>
+
+              <a class="lightbox" href="img/ts.png" title="TragicServers">
+                <img src="img/ts.png" width="150" height="150" alt="">
+              </a>
+
+              <a class="lightbox" href="img/ts-mobile.png" title="TragicServers Mobile App (WIP)">
+                <img src="img/ts-mobile.png" width="80" height="150" alt="">
+              </a>
+              
+              <a class="lightbox" href="img/smarty-home.png" title="Smarty's Home - Mockup">
+                <img src="img/smarty-home.png" width="150" height="150" alt="">
+              </a>
+
+               <a class="lightbox" href="img/smarty-find.png" title="Smarty's Find Us - Mockup">
+                <img src="img/smarty-find.png" width="150" height="150" alt="">
+              </a>
+              
+               <a class="lightbox" href="img/smarty-about.png" title="Smarty's About Us - Mockup">
+                <img src="img/smarty-about.png" width="150" height="150" alt="">
+              </a>
+            </div>
           </div>
 
-
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-12 col-md-12 host-menu loadHide">
             <h2>Hosting</h2>
             <p>You have your website developed but don't have a host? Maybe you aren't familiar with hosting services.</p>
 
             <p>I can take care of that, offering you a peace of mind. I have been providing hosting services since May 2012 with my company, <a href="https://tragicservers.com/" target="_blank">TragicServers</a>, serving 
-            hundreds of customers with low priced, high quality service. </p>
+            hundreds of customers with low priced, high quality service. </p
           </div>
 
-          <div class="col-sm-4 col-md-4">
-            <h2>System Administrator</h2>
-            <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
-
-            <p>Cominbing both development and hosting to offer a complete managed service.</p>
-          </div>
         </div>
+        
+        <div class="col-sm-12 col-md-12 sys-menu loadHide">
+          <h2>System Administrator</h2>
+          <p> I'll take care of everything for you. Starting with the development process to make your vision a reality followed by hosting your vision.</p>
+
+          <p>Cominbing both development and hosting to offer a complete managed service.</p>
+        </div>
+
+      </div>
       </div>
       
       <hr />
       
       <div id="footer">
-        <div id="footer-start" class="row">
-          <div class="col-sm-12 col-md-12">
-
-            <ul class="nav nav-pills footer-nav">
-              <li><a href="#" id="clickPortfolio">Portfolio</a></li>
-              <li><a href="#" id="clickAbout">About</a></li>
-              <li><a href="#" id="clickContact">Contact</a></li>
-            </ul>
-            
-            <span>Click above to expand</span>
-            <img src="img/arrow.png" alt="">
-          </div>
-        </div>
-
-        <div id="footer-portfolio" class="row loadHide">
-          <div class="col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
-            
-            <a class="lightbox" href="img/ts.png" title="TragicServers">
-              <img src="img/ts.png" width="150" height="150" alt="">
-            </a>
-
-            <a class="lightbox" href="img/ts-mobile.png" title="TragicServers Mobile App (WIP)">
-              <img src="img/ts-mobile.png" width="80" height="150" alt="">
-            </a>
-            
-            <a class="lightbox" href="img/smarty-home.png" title="Smarty's Home - Mockup">
-              <img src="img/smarty-home.png" width="150" height="150" alt="">
-            </a>
-
-             <a class="lightbox" href="img/smarty-find.png" title="Smarty's Find Us - Mockup">
-              <img src="img/smarty-find.png" width="150" height="150" alt="">
-            </a>
-            
-             <a class="lightbox" href="img/smarty-about.png" title="Smarty's About Us - Mockup">
-              <img src="img/smarty-about.png" width="150" height="150" alt="">
-            </a>
-          </div>
-        </div>
 
         <div id="footer-about" class="row loadHide">
           <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
@@ -129,7 +126,7 @@
           </div>
         </div>
 
-        <div id="footer-contact" class="row loadHide">
+        <div id="footer-contact" class="row">
           <h3>Interested in starting a project or have questions?<small>Contact me below</small></h3>
 
           <div class="col-sm-8 col-sm-offset-2 contact-form">

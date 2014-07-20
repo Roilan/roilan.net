@@ -59,33 +59,23 @@ hr {
 	opacity: 0.3;
 }
 
-/* Footer */
+/* Main */
 
-#footer-start ul li{
-	margin-bottom: 1px;
-	font-size: 18px !important;
+nav ul {
+	padding-left: 20px !important;
 }
 
-.footer-nav, 
-#footer-start span, 
-#footer-start img {
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
-    font-size: 14px;
+.main-content {
+	text-align: center;
 }
 
-#footer-start img {
-	margin-top: 15px;
-	padding-bottom: 15px;
-}
-
-#footer-portfolio a > img {
+.dev-menu-port a > img {
 	margin-top: 20px;
 	margin-right: 40px;
 	padding-bottom: 15px;
 }
+
+/* Footer */
 
 #footer-about {
 	margin-bottom: 20px;
