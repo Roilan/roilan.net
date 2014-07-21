@@ -1,20 +1,17 @@
 $(document).ready(function() {
-  var $footerPortfolio = $('#footer-portfolio'),
-      $footerAbout = $('#footer-about'),
+  var $footerAbout = $('#footer-about'),
       $footerContact = $('#footer-contact'),
       $footerSent = $('#footer-contact-sent');
 
-  var $clickPortfolio = $('#clickPortfolio'),
-      $clickAbout = $('#clickAbout'),
-      $clickContact = $('#clickContact');
-
   var $loadHide = $('.loadHide');
-
   var sentUrl = window.location.href;
 
+  // Hide sections on load
   $loadHide.hide();
 
+  // Accordion slide function
   function myClick(obj) {
+    // Checks if hidden and slides up.
     if (obj.css('display') == 'none'){
       $loadHide.slideUp(500);
 
@@ -23,7 +20,7 @@ $(document).ready(function() {
       if ($(d).css('display') != 'none') {
         $(d).slideUp(600);
       }
-
+      // Allows self clicking to be hide/show
       obj.slideToggle(500);
     } else {
       obj.slideUp(500);
@@ -35,20 +32,15 @@ $(document).ready(function() {
     myClick($('.dev-menu'));
   });
 
-   /* $clickAbout.click(function(event) {
-    event.preventDefault();
-    myClick($footerAbout); }
-  ); */
-
   $('.clickHost').on('click', function(e) {
     e.preventDefault();
     myClick($('.host-menu'));
   });
 
-  $clickContact.click(function(event) {
-    event.preventDefault();
-    myClick($footerContact); }
-  );
+  $('.clickSys').on('click', function(e) {
+    e.preventDefault();
+    myClick($('.sys-menu'));
+  });
 
   if (sentUrl.search("#sent") >= 0) {
     $footerContact.slideUp(500);
