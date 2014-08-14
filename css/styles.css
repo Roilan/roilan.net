@@ -94,3 +94,7 @@ hr {
 #footer-contact textarea {
 	resize: none;
 }
+
+.loadHide {
+	display: none;
+}

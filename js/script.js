@@ -3,11 +3,7 @@ $(document).ready(function() {
       $footerContact = $('#footer-contact'),
       $footerSent = $('#footer-contact-sent');
 
-  var $loadHide = $('.loadHide');
   var sentUrl = window.location.href;
-
-  // Hide sections on load
-  $loadHide.hide();
 
   // Accordion slide function
   function myClick(obj) {
