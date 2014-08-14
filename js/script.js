@@ -13,9 +13,9 @@ $(document).ready(function() {
       $loadHide.slideUp(500);
 
       // Slides development section if not hidden
-      var d = $('.dev-menu');
-      if ($(d).css('display') != 'none') {
-        $(d).slideUp(600);
+      var $dev = $('.dev-menu');
+      if ($dev.css('display') != 'none') {
+        $dev.slideUp(600);
       }
       // Allows self clicking to be hide/show
       obj.slideToggle(500);
