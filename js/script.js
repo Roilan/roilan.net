@@ -41,7 +41,7 @@ $(document).ready(function() {
 
   if (sentUrl.search("#sent") >= 0) {
     $footerContact.slideUp(500);
-    $footerSent.slideDown(800).delay(1000).slideUp(800);
+    $footerSent.slideDown(800);
   }
 
   $('.lightbox').magnificPopup({
