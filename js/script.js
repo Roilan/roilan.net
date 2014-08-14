@@ -3,6 +3,7 @@ $(document).ready(function() {
       $footerContact = $('#footer-contact'),
       $footerSent = $('#footer-contact-sent');
 
+  var $loadHide = $('.loadHide');
   var sentUrl = window.location.href;
 
   // Accordion slide function
