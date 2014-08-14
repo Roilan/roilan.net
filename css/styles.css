@@ -10,9 +10,9 @@ body {
 
 /* Header */
 
-small {
+.small {
 	padding-left: 15px;
-	font-size: 11.5pt !important;
+	font-size: 11.5pt;
 }
 
 #navbar-left-name {
@@ -61,8 +61,8 @@ hr {
 
 /* Main */
 
-nav ul {
-	padding-left: 20px !important;
+.nav-tabs {
+	padding-left: 20px;
 }
 
 .main-content {
