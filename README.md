@@ -1,6 +1,5 @@
 Portfolio Website
 =================
-Personal portfolio website
 
 
 Workflow
@@ -8,6 +7,7 @@ Workflow
 
 Javascript
  - jQuery
+ - Grunt.js
  
- CSS
-  - Bootstrap
+CSS
+ - Bootstrap
