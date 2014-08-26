@@ -103,3 +103,13 @@ hr {
 .loadHide {
 	display: none;
 }
+
+/* Capcha */
+
+#ebcaptchatext {
+	padding-right: 10px;
+}
+
+#ebcaptchainput {
+	width: 10%;
+}

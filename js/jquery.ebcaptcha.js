@@ -3,13 +3,13 @@
 	jQuery.fn.ebcaptcha = function(options){
 
 		var element = this; 
-		var submit = $(this).find('input[type=submit]');
+		var submit = $(this).find('button[type=submit]');
 		$('<label id="ebcaptchatext"></label>').insertBefore(submit);
-		$('<input type="text" class="textbox" id="ebcaptchainput"/><br/><br/>').insertBefore(submit);
+		$('<input type="text" class="textbox" id="ebcaptchainput"/>').insertBefore(submit);
 		var input = this.find('#ebcaptchainput'); 
 		var label = this.find('#ebcaptchatext'); 
 		
-		$(element).find('input[type=submit]').attr('disabled','disabled'); 
+		$(element).find('button[type=submit]').attr('disabled','disabled'); 
 
 		
 		var randomNr1 = 0; 
@@ -29,10 +29,10 @@
 			var nr = $(this).val();
 			if(nr==totalNr)
 			{
-				$(element).find('input[type=submit]').removeAttr('disabled');				
+				$(element).find('button[type=submit]').removeAttr('disabled');				
 			}
 			else{
-				$(element).find('input[type=submit]').attr('disabled','disabled');
+				$(element).find('button[type=submit]').attr('disabled','disabled');
 			}
 			
 		});
@@ -41,7 +41,7 @@
 		{
 			if(e.which==13)
 			{
-				if((element).find('input[type=submit]').is(':disabled')==true)
+				if((element).find('button[type=submit]').is(':disabled')==true)
 				{
 					e.preventDefault();
 					return false;
